@@ -52,6 +52,13 @@ else:
     #while loop done
     #for loop indentation problem
 
-
-
+#datatypes
+  #integers
+  #1,3,4
+  #floats
+  #2.44
+  #strings
+  #"3"
+  #boolens
+#yes or no /true or False
 
