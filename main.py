@@ -52,7 +52,7 @@ else:
     #while loop done
     #for loop indentation problem
 
-#datatypes
+#datatypes adn casting(to change one datatype to another )
   #integers
   #1,3,4
   #floats
@@ -61,4 +61,30 @@ else:
   #"3"
   #boolens
 #yes or no /true or False
+print()
 
+#learning about strings
+print()
+s="happy coder"
+print(s)
+print()
+
+#printing inside string i,e single words ex
+print(s[0])
+print()
+
+#learning lists
+
+l = [1,2,3]
+print (l[1])
+print()
+
+#complex lists
+list2 =["string" ,'singel', True,4.2,[1,2,3]]
+print(list2[0])
+print(list2[1])
+print(list2[2])
+print(list2[3])
+print(list2[4])
+print()
+#append in lists (puting something at the end of the list
