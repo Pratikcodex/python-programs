@@ -1,6 +1,6 @@
-person1 = {"nancy_pants", 25 ,'pizza'}
+person1 = ("nancy_pants", 25 ,'pizza')
 print()
-person2 = {"joe", 35 ,'burger'}
+person2 = ("joe", 35 ,'burger')
 
 people =[person1 ,person2]
 
