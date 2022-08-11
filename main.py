@@ -1,5 +1,17 @@
-#tuples
-credit_card1 ={1234567890123456 , 'pratik' , '11/12'  , 123 }
-credit_card2 ={1234567890123456 , 'pratik' , '11/12' , 123 }
-credit_cards = [ credit_card1 , credit_card2 ]
-print (credit_cards)
+person1 = {"nancy_pants", 25 ,'pizza'}
+print()
+person2 = {"joe", 35 ,'burger'}
+
+people =[person1 ,person2]
+
+#name , age , favfood = person
+#print(name)
+#print(age)
+#print(favfood)
+
+for name, age, favfood in people:
+  print(name)
+  print(age)
+  print(favfood)
+  print()
+    
