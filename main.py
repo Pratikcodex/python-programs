@@ -1,25 +1,76 @@
-library_1 ={'harry', 'game of thrones', 'potter'}
+#dictionaries in python 
 
-library_2 = {'harry', 'hola'}
+groceries={'bananas':5 , 'apples':3}
 
-all_books_in_town = library_1.union(library_2)
+contacts = {'john':65465464, 
+           "jenny":{'phone':'1234141','email':'ea@gmail.com'}
+           }
 
-same_books_in_town=library_1.intersection(library_2)
 
-print(all_books_in_town)#union
-
-print()
-
-print(same_books_in_town)#intersection
-
+print(groceries['bananas'])
 
 print()
 
-#difference
+print(groceries.get('apples'))
 
-diff = library_1.difference(library_2)
-diff2 = library_2.difference(library_1)
-print(diff)
 print()
-print(diff2)
+
+print(contacts['jenny'])
+
+
+sentence ="I Like the word pratik pratik is a good coder"
+
+word_count ={
+'I':1,
+'pratik': 2
+}
+
+print(word_count)
+word_count['Like']=1
+print(word_count)
+
+
+#dict.items()
+print(word_count.items())
+print()
+
+#dict.keys
+print(word_count.keys())
+print()
+
+#dict.values\
+print()
+print(word_count.values())
+print()
+
+#delete something from dictionary\
+#dict.pop(key)
+
+print(word_count)
+print()
+print(word_count.pop('I'))
+print(word_count)
+
+print()
+
+#dict.popitem()delet the last one or the highest 
+
+print(word_count)
+print(word_count.popitem())
+print(word_count)
+
+print()
+
+
+#dict.clear
+#word_count.clear()
+
+
+
+
+
+
+
+
+
 
