@@ -1,8 +1,15 @@
-package = []
+[[package]]
+name = "pytz"
+version = "2022.2"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
 
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "7e2c60a22372087a30b000268120393f18c9db912361d09aae060e946ab6318e"
+content-hash = "df7d1c0f8b0207843d71ee15c83e2885d9468b77b08a5771b3e0829fca80bf15"
 
 [metadata.files]
+pytz = []
