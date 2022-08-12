@@ -1,96 +1,39 @@
-import datetime
-import pytz
+list1 = [1,2,3,4,5,]   #6 will be ignored if present
 
-today = datetime.date.today()
+list2 =['one', 'two','three', 'four', 'five']
 
-print(today)
+zipped = list(zip(list1,list2))
 
-
-
+print(zipped)
 
 
-print()
+unziped = list(zip(*zipped))
+print(unziped)
 
-birthday = datetime.date(2002 , 2 ,19)
-print(birthday)
-
-
-
-
-
+for (l1 , l2) in zip(list1 , list2):
+  print(l1)
+  print(l2)
+ 
 
 print()
-
-days_since_birth = (today - birthday).days
-
-print(days_since_birth)
-
-
-
-
-
-
-
+print()
 print()
 
-tdelta = datetime.timedelta(days = 4)
-print(today + tdelta )
-print()
-
-print(today.month)
 
 
 
+items = ['apples', 'banana', 'orange']
+
+count = [ 1,3,5]
+
+price= [60,20,10]
 
 
+for (l1,l2,l3) in zip(items , count, price):
 
+ 
+  print(l1)
+  print(l2)
+  print(l3)
+  
 
-print()
-
-print(today.weekday())
-
-print()
-
-print(today.day)
-
-
-
-
-
-
-print()
-
-print(datetime.time(7,10,20,15))
-
-#datetime.date (Y.M.D)
-#datetime.Time(h,m,s,ms)
-#datetime.datetime(Y,M,D,h,m,s,ms)
-
-#add 10 hours to current day 
-hour_delta = datetime.timedelta(hours = 10)
-
-print(datetime.datetime.now() + hour_delta)
-
-print()
-
-datetime_today = (datetime.datetime.now(tz=pytz.UTC))
-
-
-datetime_pacific =  (datetime_today.astimezone(pytz.timezone('US/Pacific')))
-
-print(datetime_pacific)
-
-for tz in pytz.all_timezones:
-  print(tz)
-
-
-#satrting formatting with dates
-#2019-02-09 = augusgt 12 2022
-#f= formatiing
-print(datetime_pacific.strftime('%B %d ,%Y'))
-
-# from august to like 2022 - 12 -8
-#strptime  p = parsing
-
-#datetime_thing = datetime.datetime.strptime('August 12, 2022',  '%B %d , %Y')
-#print(repr(datetime_thing))
