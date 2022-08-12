@@ -1,15 +1,31 @@
-#immute
-#tuples
-#ints,floats ,booleans,
+#list comprehension
 
-#mutable
-#lists
+names = ['jennifer', 'raj' ,'pratik', ]
+l = []
+for person in names:
+  print([person for person in names])
 
-#dictionaries
-#orderedDICT
+  l=[]
+  
+  for person in names:
+    
+    
+    l.append(person+'dumped me')
+    
+    print(l)
 
-t = (1,2,[1,2,3])
-print(t)
+print([person +'dumped me' for person in names])
 
-t[2][1]=4
-print(t)
+
+#runnning comprehension inside a dictionary
+
+movies_and_rating = {"interstellar":10 , "dark knight":9 ,"teen wolf":8 , "ek vilain":5, "bharamhastra":4 , "50 shades":2 }
+
+l = []
+
+for movie in movies_and_rating:
+  if movies_and_rating[movie] > 6:
+    l.append(movie)
+    print(l)
+
+print([movie for movie in movies_and_rating if movies_and_rating[movie] > 6 ])
