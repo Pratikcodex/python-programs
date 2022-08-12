@@ -1,31 +1,29 @@
-#list comprehension
+import re
 
-names = ['jennifer', 'raj' ,'pratik', ]
-l = []
-for person in names:
-  print([person for person in names])
+text = "a Random string."
 
-  l=[]
-  
-  for person in names:
-    
-    
-    l.append(person+'dumped me')
-    
-    print(l)
+pattern = re.compile("a Random string")
 
-print([person +'dumped me' for person in names])
+result = pattern.search(text)
+
+print(result)
+
+wolla = "A bug in the House"
+
+pattern = re.compile("[ABC]")
+
+result2 = pattern.search(wolla)
+
+print(result2)
 
 
-#runnning comprehension inside a dictionary
 
-movies_and_rating = {"interstellar":10 , "dark knight":9 ,"teen wolf":8 , "ek vilain":5, "bharamhastra":4 , "50 shades":2 }
+text2 = "Random546 string."
 
-l = []
+pattern = re.compile("[a-zA-Z0-9]+")
 
-for movie in movies_and_rating:
-  if movies_and_rating[movie] > 6:
-    l.append(movie)
-    print(l)
+result3 = pattern.search(text2)
 
-print([movie for movie in movies_and_rating if movies_and_rating[movie] > 6 ])
+print(result3)
+
+
