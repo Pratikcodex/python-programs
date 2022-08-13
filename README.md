@@ -34,7 +34,7 @@ Javascript, HTML, python, github ...
 
 ## 🚀 About Me
 I'm a beginer in full stack developing process...
-i am currently a b.tecj undergrad 
+i am currently a b.tech undergrad 
 living in india (new delhi)
 email : pratikrajcpr@gmail.com
 
